@@ -319,6 +319,7 @@
             .tabs {
                 display: flex !important;
                 flex-direction: row ;
+                margin: 0 auto;
 
                 button {
                     width: 110px !important;
@@ -369,6 +370,7 @@
                     span {
                         margin: 20px;
                         font-size: 14px !important;
+                        color: #41444B;
                     }
 
                     svg {

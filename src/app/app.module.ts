@@ -18,7 +18,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { DoubtsPageComponent } from './doubts-page/doubts-page.component';
 import {MatExpansionModule} from '@angular/material/expansion';
-import { HistoryPageComponent } from './teacher-page/history-page/history-page.component';
+import { HistoryComponent } from './history/history.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +32,7 @@ import { HistoryPageComponent } from './teacher-page/history-page/history-page.c
     HeaderPageComponent,
     LandingPageComponent,
     DoubtsPageComponent,
-    HistoryPageComponent
+    HistoryComponent
   ],
   imports: [
     BrowserModule,
