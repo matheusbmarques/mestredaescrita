@@ -1,7 +1,7 @@
 #history {
     height: auto;
 
-    #WhoIAm {
+    #WhoIAmTwo {
         display: flex;
         justify-content: space-around;
         width: 100%;
@@ -89,7 +89,7 @@
 @media screen and (max-width: 600px) {
     #history {
 
-        #WhoIAm {
+        #WhoIAmTwo {
             height: auto;
             display: flex;
             flex-direction: column;

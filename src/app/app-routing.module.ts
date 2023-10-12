@@ -10,12 +10,17 @@ const routes: Routes = [
   },
   {
     path: 'history', 
-    component: HistoryComponent 
+    component: HistoryComponent,
+
   },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    RouterModule.forRoot(routes, {
+      scrollPositionRestoration: 'enabled' // ou 'enabled' para rolagem instantânea
+    })
+  ],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

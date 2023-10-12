@@ -199,14 +199,20 @@ a:hover:before {
         max-width: 280px !important;
         margin: 0 auto;
 
-        button {
-            justify-content: center;
-            width: 280px !important;
-            max-width: 280px !important;
+        a {
             margin: 0 auto !important;
-            color: #FFFFFF !important;
-            font-weight: 600 !important;
+            
+            button {
+                justify-content: center;
+                width: 280px !important;
+                max-width: 280px !important;
+                
+                color: #FFFFFF !important;
+                font-weight: 600 !important;
+            }
         }
+
+
     }
 }
 
