@@ -281,11 +281,11 @@
 
             .emotionalWriting {
                 h3 {
-                    font-size: 25px;
+                    font-size: 22px;
                 }
 
                 .emotionalExplication {
-                    width: 380px !important;
+                    width: 90% !important;
 
                     hr {
                         margin: 0 -30px !important;
@@ -293,7 +293,7 @@
                     }
 
                     p {
-                        max-width: 375px !important;
+                        max-width: 90% !important;
                     }
                 }
             }
@@ -335,8 +335,8 @@
                 .text1,
                 .text2,
                 .text3 {
-                    max-width: 380px;
-                    margin: 30px !important;
+                    max-width: 90%;
+                    margin: 30px auto !important;
 
                 }
             }
@@ -380,6 +380,8 @@
             }
 
             .frame {
+                display: flex;
+                margin: 0 auto;
                 
                 iframe {
                     width: 360px !important;
