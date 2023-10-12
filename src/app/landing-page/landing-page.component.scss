@@ -1,0 +1,250 @@
+#home::before {
+    content: "";
+    background-color: rgb(0, 0, 0, 0.7);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#home {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+
+    background: url("../../assets/images/bookOne.png") 80% no-repeat !important;
+    position: relative;
+    background-size: cover !important;
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+        margin: 200px 70px 10px;
+
+        h1 {
+            font-family: "Poppins";
+            font-size: 40px;
+
+            text-transform: uppercase;
+            line-height: 50px;
+            color: #FFFFFF;
+
+            span {
+                color: #FEC400;
+                font-size: 80px;
+            }
+        }
+
+        p {
+            color: #FFFFFF;
+            font-family: "Poppins";
+            font-size: 25px;
+            max-width: 90%;
+            line-height: 28px;
+        }
+    }
+
+    // .btnMethod {
+    //     width: 220px;
+    //     height: 50px;
+    //     border-radius: 50px;
+    //     font-family: "Poppins";
+    //     font-size: 14px;
+    //     font-weight: 600;
+    //     background-image: linear-gradient(135deg, #FAB23D 0%, #FEC400 100%);
+    //     color: #FFFFFF;
+    //     letter-spacing: 0.5px;
+    //     text-transform: uppercase;
+    //     border: none;
+    //     text-align: center;
+    //     cursor: pointer;
+    //     transition: 0.4s;
+    // }
+
+    // .btnMethod:hover {
+    //     box-shadow: 7px 5px 56px -14px #C3D900;
+    // }
+
+    .btnMethod:active {
+        transform: scale(0.97);
+        box-shadow: 7px 5px 56px -10px #C3D900;
+    }
+
+    .btnMethod {
+        background-color: #FAB23D;
+        box-shadow: 0px 2px 8px 0px rgba(49, 49, 49, 0.10);
+        width: 200px;
+        height: 60px;
+        border: none;
+        border-radius: 50px;
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+
+        .text {
+            font-family: "PoppinsLight" !important;
+            font-size: 16px;
+            font-weight: bold;
+            color: #4A4856;
+            transition: .6s ease;
+        }
+    }
+
+    .btnMethod span:not(:nth-child(6)) {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        height: 30px;
+        width: 30px;
+        background-color: #FFFFFF;
+        border-radius: 50%;
+        transition: .6s ease;
+    }
+
+    .btnMethod span:nth-child(6) {
+        position: relative;
+    }
+
+    .btnMethod span:nth-child(1) {
+        transform: translate(-52px, -64px);
+    }
+
+    .btnMethod span:nth-child(2) {
+        transform: translate(-120px, 40px);
+    }
+
+    .btnMethod span:nth-child(3) {
+        transform: translate(-5px, 55px);
+    }
+
+    .btnMethod span:nth-child(4) {
+        transform: translate(60px, 30px);
+    }
+
+    .btnMethod span:nth-child(5) {
+        transform: translate(60px, -80px);
+    }
+
+    .btnMethod:hover span:not(:nth-child(6)) {
+        transform: translate(-50%, -50%) scale(8);
+        transition: 1.5s ease;
+    }
+
+    .btnMethod:hover .text {
+        color: #FAB23D;
+        transition: .6s ease;
+    }
+
+    .btnWhatsapp {
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+
+        width: 65px;
+        height: 65px;
+        padding: 20px;
+
+        position: fixed;
+        right: 50px;
+        bottom: 50px;
+
+        z-index: 0;
+        border-radius: 50%;
+        border: none;
+        background-color: #2FC850;
+        transition: .4s ease-in-out;
+
+        img {
+            scale: 1.5;
+        }
+    }
+
+}
+
+
+.btnWhatsapp:hover {
+    scale: 1.1;
+    transition: .4s ease-in-out;
+}
+
+
+.sidenav {
+    width: 280px;
+    flex: 1;
+    border-left: solid 1px #ddd;
+
+    mat-nav-list {
+        margin-top: 50px;
+    }
+
+    mat-list-item {
+        font-family: "GloboFont" !important;
+
+        font-weight: 500;
+        font-size: 1em;
+
+        display: flex;
+        align-items: center;
+
+        mat-icon {
+            margin-right: 10px;
+        }
+    }
+
+    .topic-list {
+        left: 5% !important;
+    }
+}
+
+//media screen
+
+@media screen and (max-width: 600px) {
+    #home {
+        max-width: 390px !important;
+        overflow: hidden;
+
+        .title {
+            // margin-left: 10px !important;
+            margin: 300px 10px !important;
+
+            h1 {
+                font-size: 24px !important;
+                line-height: 28px !important;
+            }
+
+            span {
+                font-size: 38px !important;
+            }
+        }
+
+        p {
+            font-size: 14px !important;
+            line-height: 18px !important;
+            margin: -5px 0 !important;
+        }
+
+        .btnMethod {
+            max-width: 180px !important;
+            height: 50px !important;
+        }
+
+        .btnWhatsapp {
+            width: 25px;
+            height: 25px;
+            padding: 20px;
+
+            position: fixed;
+            right: 30px;
+            bottom: 30px;
+
+            img {
+                width: 15px;
+                height: 15px;
+                position: relative;
+                bottom: 8px;
+            }
+        }
+
+    }
+}

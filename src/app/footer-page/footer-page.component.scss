@@ -1,0 +1,111 @@
+#footer::before {
+    content: "";
+    background-color: rgb(0, 0, 0, 0.7);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#footer {
+    display: flex;
+    width: 100%;
+    height: 200px;
+
+    background: url("../../assets/images/BookFooter.png") 80% no-repeat !important;
+    position: relative;
+    background-size: cover !important;
+
+    .content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 100px;
+        z-index: 1;
+
+        .logo {
+            padding: 0 -30px;
+            width: 190px;
+            margin: auto 0;
+        }
+
+        .mediaSocial {
+            display: flex;
+            flex-direction: column;
+            margin: auto 0;
+
+            .medias {
+                display: flex;
+                justify-content: center;
+                margin: 20px 0;
+
+                .whatsapp,
+                .instagram {
+                    display: flex;
+                    justify-content: center;
+                    cursor: pointer;
+
+                    width: 50px;
+                    height: 50px;
+
+                    z-index: 1;
+                    border-radius: 50%;
+                    border: none;
+                    transition: .4s ease-in-out;
+
+                    img {
+                        scale: 0.5;
+                    }
+                }
+
+                .whatsapp {
+                    margin-right: 15px;
+                    background-color: #2FC850;
+                }
+
+                .instagram {
+                    margin-left: 15px;
+                    background-color: #E1306C;
+                }
+
+                .whatsapp:hover,
+                .instagram:hover {
+                    background-color: #FAB23D;
+                    scale: 1.1;
+                    transition: .4s ease-in-out;
+                }
+            }
+
+            p {
+                font-family: "Poppins";
+                font-size: 12px;
+                font-weight: 600;
+                color: #FFFFFF;
+            }
+
+        }
+    }
+
+
+}
+
+
+
+//media screen 
+
+@media screen and (max-width: 390px) {
+    #footer {
+        max-width: 390px !important;
+        overflow: hidden;
+
+        .content {
+            padding: 0 5px !important;
+        }
+
+        p {
+            font-size: 10px !important;
+            margin: -5px 0 !important;
+        }
+
+        
+    }
+}

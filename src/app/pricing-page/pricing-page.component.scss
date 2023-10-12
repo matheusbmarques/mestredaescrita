@@ -1,0 +1,226 @@
+#pricing::before {
+    content: "";
+    background-color: rgb(0, 0, 0, 0.7);
+    position: absolute;
+    width: 100%;
+    height: 400px;
+}
+
+
+#pricing {
+    width: 100%;
+    height: 400px;
+
+    background: url("../../assets/images/bookPricing.png") 80% no-repeat !important;
+    position: relative;
+    background-size: cover !important;
+
+    .contentPricing {
+        display: flex;
+        justify-content: space-around;
+
+        .contentText {
+            margin: 70px 70px;
+            z-index: 1;
+            width: 50%;
+
+            h3 {
+                color: #FAB23D;
+                line-height: 50px;
+                font-family: "Poppins";
+                font-size: 50px;
+                font-weight: 600;
+            }
+
+            p {
+                font-family: "PoppinsLight";
+                font-size: 24px;
+                line-height: 24px;
+                color: #FFFFFF;
+
+                strong {
+                    color: #FAB23D;
+                }
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            button {
+                cursor: pointer;
+                font-weight: 500;
+                font-family: "Poppins";
+                transition: all .2s;
+                padding: 10px 20px;
+                border-radius: 100px;
+                background: #FAB23D;
+                border: 1px solid transparent;
+                display: flex;
+                align-items: center;
+                font-size: 15px;
+    
+                svg {
+                    width: 34px;
+                    margin-left: 10px;
+                    transition: transform .3s ease-in-out;
+                }
+            }
+    
+            button:hover {
+                background: #FFC812;
+    
+                svg {
+                    color: #FFFFFF;
+                    transform: translateX(5px);
+                }
+            }
+    
+    
+            button:active {
+                transform: scale(0.95);
+            }
+
+
+            // button {
+            //     margin: 15px 0;
+            //     width: 235px;
+            //     height: 60px;
+            //     background-color: #FAB23D;
+            //     background-image: linear-gradient(135deg, #FAB23D 0%, #FAB23D 100%);
+            //     color: #FFFFFF;
+            //     border-radius: 50px;
+            //     cursor: pointer;
+            //     text-transform: uppercase;
+            //     border: none;
+            //     margin-right: 50px;
+            //     font-family: "PoppinsLight";
+            //     font-weight: 600;
+            //     letter-spacing: 0.5px;
+            //     transition: all 0.3s ease-in-out;
+            // }
+
+            .guarantee {
+                display: flex;
+                align-items: center;
+                color: #FFFFFF;
+                width: 50%;
+                z-index: 1;
+                margin: 20px 10px;
+    
+                label {
+                    font-family: "PoppinsLight";
+                    font-size: 14px;
+                }
+    
+                mat-icon {
+                    display: flex;
+                    align-items: center;
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        .signature {
+            margin: auto;
+            z-index: 1;
+            color: #FFFFFF;
+
+            .off {
+                font-family: "Poppins";
+                font-weight: 600;
+
+                p {
+                    font-size: 30px;
+                    color: #DC3545;
+                    line-height: 30px;
+                    text-decoration: line-through;
+                }
+            }
+
+            .on {
+                font-family: "Poppins";
+                font-weight: 600;
+                margin-top: 10px;
+
+                p {
+                    font-size: 80px;
+                    color: #28A745;
+                    line-height: 70px;
+                }
+            }
+        }
+
+
+    }
+}
+
+//media screen
+@media screen and (max-width: 600px) {
+    #pricing::before {
+        height: 450px;
+    }
+
+    #pricing {
+        width: 100%;
+        height: 450px;
+        overflow: hidden;
+
+        .contentPricing {
+            flex-direction: column;
+
+            .contentText {
+                margin: 35px;
+
+                h3 {
+                    font-size: 35px;
+                    line-height: 35px;
+                }
+
+                p {
+                    width: 320px;
+                    font-size: 18px;
+                    line-height: 18px; 
+                }
+
+                button {
+                    margin: 5px auto;
+                    justify-content: center;
+                    width: 95% !important;
+                    height: 45px;
+                    font-size: 12px;
+
+                    svg {
+                        display: none;
+                    }
+                }
+
+                .guarantee {
+                    width: 380px;
+                    margin: 10px;
+                }
+            }
+
+            .signature {
+                display: flex !important;
+                justify-content: space-around;
+                align-items: center;
+                margin: -20px 20px;
+                
+                .off {
+                    p {
+                        font-size: 15px;
+                        line-height: 15px;
+                    }
+                }
+
+                .on {
+                    p {
+                        font-size: 40px;
+                        line-height: 40px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,58 @@
+<app-header-page
+(navigateToAnchorLink)="scrollToElement($event == 'method' ? method : $event == 'benefits' ? benefits : $event == 'results' ? results : pricing)"></app-header-page>
+
+<section id="home">
+    <div class="title">
+        <h1>
+            Comunidade
+            <br>
+            <span>Mestre da Escrita</span>
+        </h1>
+
+        <p>Domine a arte da escrita usando a psicologia e crie laços emocionais com seus leitores!</p>
+
+        <button class="btnMethod" (click)="scrollToElement(method)">
+            <span class="circle1"></span>
+            <span class="circle2"></span>
+            <span class="circle3"></span>
+            <span class="circle4"></span>
+            <span class="circle5"></span>
+            <span class="text">Conhecer método</span>
+        </button>
+    </div>
+
+    <a href="https://wa.me/557382441895?text=Olá!%20Eu%20tenho%20uma%20dúvida%20sobre%20o%20treinamento." target="_blank" class="btnWhatsapp">
+        <img src="../../assets/images/logo-whatsapp.png" alt="Logo Whatsapp">
+    </a>
+
+</section>
+
+<div #method>
+    <app-method-page></app-method-page>
+</div>
+
+<div #benefits>
+    <app-benefits-page></app-benefits-page>
+</div>
+
+<div #results>
+    <app-result-page></app-result-page>
+</div>
+
+<div #pricing>
+    <app-pricing-page></app-pricing-page>
+</div>
+
+<div>
+    <app-teacher-page></app-teacher-page>
+</div>
+
+<div>
+    <app-doubts-page></app-doubts-page>
+</div>
+
+<div>
+    <app-footer-page></app-footer-page>
+</div>
+
+
