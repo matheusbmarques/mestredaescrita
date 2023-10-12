@@ -61,14 +61,15 @@
 
 @media screen and (max-width: 600px) {
     #WhoIAm {
+        width: 100%;
         height: auto;
         display: flex;
         flex-direction: column;
         overflow: hidden;
 
         .contentText {
-            width: 95%;
-            margin: 20px 35px;
+            width: 90%;
+            margin: 20px auto;
 
             h3 {
                 font-size: 35px;

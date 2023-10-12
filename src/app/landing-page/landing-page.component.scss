@@ -44,27 +44,6 @@
         }
     }
 
-    // .btnMethod {
-    //     width: 220px;
-    //     height: 50px;
-    //     border-radius: 50px;
-    //     font-family: "Poppins";
-    //     font-size: 14px;
-    //     font-weight: 600;
-    //     background-image: linear-gradient(135deg, #FAB23D 0%, #FEC400 100%);
-    //     color: #FFFFFF;
-    //     letter-spacing: 0.5px;
-    //     text-transform: uppercase;
-    //     border: none;
-    //     text-align: center;
-    //     cursor: pointer;
-    //     transition: 0.4s;
-    // }
-
-    // .btnMethod:hover {
-    //     box-shadow: 7px 5px 56px -14px #C3D900;
-    // }
-
     .btnMethod:active {
         transform: scale(0.97);
         box-shadow: 7px 5px 56px -10px #C3D900;
@@ -201,7 +180,7 @@
 
 @media screen and (max-width: 600px) {
     #home {
-        max-width: 390px !important;
+        width: 100%;
         overflow: hidden;
 
         .title {
@@ -211,22 +190,31 @@
             h1 {
                 font-size: 24px !important;
                 line-height: 28px !important;
+
+                span {
+                    font-size: 38px !important;
+                }
             }
 
-            span {
-                font-size: 38px !important;
+
+
+            p {
+                font-size: 14px !important;
+                line-height: 18px !important;
+                margin: -5px 0 !important;
             }
         }
 
-        p {
-            font-size: 14px !important;
-            line-height: 18px !important;
-            margin: -5px 0 !important;
-        }
+
 
         .btnMethod {
+            margin-top: 20px;
             max-width: 180px !important;
             height: 50px !important;
+
+            .text {
+                font-size: 14px !important;
+            }
         }
 
         .btnWhatsapp {

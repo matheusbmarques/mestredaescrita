@@ -80,13 +80,14 @@
 
 @media screen and (max-width: 600px) {
     #results {
+        width: 100%;
         height: auto;
         flex-direction: column;
         overflow: hidden;
 
         .contentText {
-            width: 95%;
-            margin: 20px 35px;
+            width: 90%;
+            margin: 20px auto;
 
             h3 {
                 font-size: 35px;
@@ -99,9 +100,10 @@
 
             a {
                 button {
+                    display: flex;
                     width: 200px;
                     height: 50px;
-                    margin: 20px 50px;
+                    margin: 20px auto !important;
 
                     svg {
                         display: none;
