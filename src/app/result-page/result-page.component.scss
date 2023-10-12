@@ -116,7 +116,9 @@
         }
 
         img {
-            margin: 10px 5px;
+            display: flex;
+            flex-direction: column;
+            margin: 10px auto;
             width: 360px;
         }
     }
