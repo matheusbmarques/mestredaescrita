@@ -28,6 +28,10 @@
 
         .cards {
 
+            .carousel {
+                transition-duration: none;
+            }
+
             .carousel-item.active {
                 display: flex;
                 // justify-content: center;
@@ -132,7 +136,6 @@
             }
 
             .cards {
-
                 flex-direction: column;
 
                 .carousel-inner {
@@ -142,6 +145,7 @@
                 .carousel-item.active,
                 .carousel-item {
                     margin: 0 auto !important;
+                    // transition-duration: 2s !important;
                 }
 
                 .card {
